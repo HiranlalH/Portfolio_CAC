@@ -1,0 +1,333 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  
+}
+
+body {
+    background:rgb(218, 214, 214);
+    color: white;
+    background-image: url("194-1940743_mac-os-sierra-wallpaper-4k-iphone-x-wallpaper.jpg");
+
+}
+
+.header {
+    top:0;
+    left:0;
+    width: 100%;
+    padding:20px 10%;
+    background:transparent;
+    display:flex;
+    justify-content:space-between ;
+    align-items: center;
+    z-index: 100;
+
+
+}
+    
+
+.logo {
+    font-size:25px;
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+
+
+}
+
+.navbar a {
+    font-size: 18px;
+    color :black;
+    text-decoration:none;
+    font-weight: 500;
+    margin-left:35px;
+    transition:-3s;
+
+}
+.navbar a:hover,
+.navbar a.active { 
+    color:rgba(0, 2, 142, 0.836);
+
+
+
+}
+.home {
+    height: 100vh;
+    display:flex;
+    align-items:center;
+    padding:0 10%;
+
+
+}
+.home-content {
+    
+    max-width: 600px;
+    float: left;
+
+}
+
+.home-content h1 {
+    font-size: 50px;
+    font-weight:700;
+    line-height:1.2;
+    color: black;
+}
+
+.home-content h3 {
+    font-size:32px;
+    font-weight: 700;
+    color:rgba(0, 2, 142, 0.836);
+
+
+}
+.home-content p {
+    font-size:16px;
+    margin:20px 0 40px;
+    color: black;
+
+}
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width:170px;
+    display:flex;
+    justify-content: space-between;
+
+
+
+}
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
+    background: transparent;
+    border:2px solid rgba(15, 129, 211, 0.836);
+    border-radius: 50%;
+    font-size:20px;
+    color:rgba(0, 2, 142, 0.836);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: -5s;
+
+
+
+}
+.home-sci a:hover {
+    color:white;
+
+
+}
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100px;
+    background-color: rgba(0, 2, 142, 0.836);
+    z-index: -1;
+    transition: -5s;
+
+
+}
+.home-sci a:hover::before {
+    width:100%
+
+
+}
+.img-hor {
+
+        /* display: block; */
+        /* margin-left: auto; */
+        margin-right: 0%;
+        width: 50%;
+        height: 400px;
+        width: 400px;
+        /* padding: 20px; */
+        padding-left: 60px;
+        margin-top: 5%;
+        border-color: rgba(0, 2, 142, 0.836) 5px ;
+    
+    
+}
+
+      
+      
+   
+    .about-content p {
+        font-size: 16px;
+        
+    }
+    
+    
+    .education {
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap:40px;
+        margin-top:150px;
+        position:absolute;
+        left:20%;
+        float:left;
+      
+    }
+    
+    .education div{
+        border-radius: 15px 50px;
+        background:rgba(0, 2, 142, 0.836);
+        padding: 10%;
+        width: 300px;
+        height: 300px; 
+    }
+    
+     .h2{
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        align-content: baseline;
+    }
+    
+    .education div a{
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+    
+    .h1{
+   
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1;
+        position: absolute;
+        left: 40%;
+        text-align: center;
+    }
+.edu{
+    display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap:40px;
+        margin-top:0px;
+        position:absolute;
+        left:150%;
+        float:left;
+
+}
+
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+  }
+  
+  input[type=submit] {
+    background-color: rgba(0, 2, 142, 0.836);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgba(0, 2, 142, 0.836);
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color:white;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  /* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width:50%; /* Full width */
+  /* background-color: #ddd; Grey background */
+  margin-top: 10px;
+  margin-left: 350px;
+
+  
+  
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+  font-size: 16px;
+  margin-left: 50px;
+  
+}
+
+.html {width: 65%; background-color: rgba(0, 2, 142, 0.836);} 
+.python {width: 60%; background-color:rgba(0, 2, 142, 0.836);} 
+.css{width: 60%; background-color: rgba(0, 2, 142, 0.836)} 
+.sql {width: 50%; background-color:rgba(0, 2, 142, 0.836)} 
+
+.skill {
+    padding-top:30%;
+    text-align: center;
+    font-size: 42px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+        
+            
+        
+    
